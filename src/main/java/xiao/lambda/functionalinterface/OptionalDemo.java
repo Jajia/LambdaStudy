@@ -14,7 +14,7 @@ public class OptionalDemo {
     public static void main(String[] args) {
         OptionalDemo optionalDemo = new OptionalDemo();
         System.out.println(optionalDemo.login(new User("sean","sean")));
-        Student student = new Student();
+        Student student = new Student("xiao",12);
         Book book1 = new Book("book1", 12);
         Book book2 = new Book("book2", 16);
         student.setBooks(Arrays.asList(book1, book2));

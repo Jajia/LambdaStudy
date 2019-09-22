@@ -8,6 +8,14 @@ public class Student {
     private List<Book> books;
     private Teacher teacher;
 
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public Student() {
+    }
+
     public Teacher getTeacher() {
         return teacher;
     }
@@ -48,5 +56,13 @@ public class Student {
                 ", books=" + books +
                 ", teacher=" + teacher +
                 '}';
+    }
+
+    public static int compareByAge(Student s1, Student s2) {
+        return s1.getAge() - s2.getAge();
+    }
+
+    public static int compareByName(Student s1, Student s2) {
+        return s1.getName().compareToIgnoreCase(s2.getName());
     }
 }
