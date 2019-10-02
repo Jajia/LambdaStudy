@@ -13,6 +13,10 @@ public class Student {
         this.age = age;
     }
 
+    public Student(String name) {
+        this.name = name;
+    }
+
     public Student() {
     }
 
@@ -64,5 +68,9 @@ public class Student {
 
     public static int compareByName(Student s1, Student s2) {
         return s1.getName().compareToIgnoreCase(s2.getName());
+    }
+
+    public int compareByAge2(Student s1) {
+        return this.getAge() - s1.getAge();
     }
 }
